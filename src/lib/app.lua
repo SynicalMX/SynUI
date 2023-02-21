@@ -1,4 +1,4 @@
-local drawing = require("/synui/lib/app")
+local drawing = require("/synui/lib/drawing")
 
 local app = {}
 local app_template = {}

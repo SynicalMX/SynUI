@@ -1,4 +1,4 @@
-local app = require("lib/app")
+local app = require("/synui/lib/app")
 
 local synui = {
     ["app"] = app
