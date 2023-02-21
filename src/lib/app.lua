@@ -7,6 +7,8 @@ local termX, termY = term.getSize()
 
 function app_template:draw()
     drawing:drawHeader(self.title, self.pallete)
+    self.window.setBackgroundColor(self.pallete.secondary)
+    self.window.clear()
 end
 
 --- Creates a new App object.

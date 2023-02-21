@@ -37,4 +37,5 @@
 
 ---@class Pallete
 ---@field primary integer Primary color
+---@field secondary integer Secondary color
 ---@field text integer Text color
