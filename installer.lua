@@ -1,4 +1,4 @@
-local URL = "https://raw.githubusercontent.com/SynicalMX/SynUI/main/src/"
+local URL = "https://raw.githubusercontent.com/SynicalMX/SynUI/master/src/"
 
 local function download(file, path)
     local http_handle, err = http.get(URL..file)
