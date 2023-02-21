@@ -4,7 +4,7 @@ An extensible app library for ComputerCraft.
 
 ## Install
 
-`https://raw.githubusercontent.com/SynicalMX/SynUI/master/`
+`wget run https://raw.githubusercontent.com/SynicalMX/SynUI/master/`
 
 ## Features
 
