@@ -17,5 +17,6 @@ end
 
 download("init.lua", "/synui/init.lua")
 download("lib/app.lua", "/synui/lib/app.lua")
+download("lib/app.lua", "/synui/lib/drawing.lua")
 
 print("SynUI has been installed.")
