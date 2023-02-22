@@ -1,14 +1,34 @@
 local drawing = require("/synui/lib/drawing")
 
-local app = {}
-local app_template = {}
-
 local termX, termY = term.getSize()
+
+local app = {}
+
+---@type App
+local app_template = {}
 
 function app_template:draw()
     drawing:drawHeader(self.title, self.pallete)
     self.window.setBackgroundColor(self.pallete.secondary)
     self.window.clear()
+end
+
+function app_template:setTitle(title)
+    self.title = title
+    drawing:drawHeader(self.title, self.pallete)
+end
+
+function app_template:getTitle()
+    return self.title
+end
+
+function app_template:setPallete(pallete)
+    self.pallete = pallete
+    drawing:drawHeader(self.title, self.pallete)
+end
+
+function app_template:getPallete()
+    return self.pallete
 end
 
 --- Creates a new App object.
