@@ -30,7 +30,7 @@ if fs.exists("/synui/") then
     res:upper()
 
     if res == "Y" then
-        local synui = require("synui")
+        local synui = require("/synui")
 
         local http_handle = http.get("https://raw.githubusercontent.com/SynicalMX/SynUI/master/version")
         local cloud = http_handle.readAll()
