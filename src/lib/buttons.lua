@@ -13,6 +13,13 @@ end
 
 function button_template:update(x, y)
     local xmin = self.size.xmin
+    local ymax = self.size.ymax
+    local xmax = self.size.xmax
+    local ymin = self.size.ymin
+    
+    if xmax >= x and xmin <= x and ymax >= y and ymin <= y then
+        self.func()
+    end
 end
 
 function buttons:create(xmin, ymax, xmax, ymin, func, text, pallete)
