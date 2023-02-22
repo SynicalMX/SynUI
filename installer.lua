@@ -43,6 +43,9 @@ if fs.exists("/synui/") then
             download("init.lua", "/synui/init.lua")
             download("lib/app.lua", "/synui/lib/app.lua")
             download("lib/drawing.lua", "/synui/lib/drawing.lua")
+            download("lib/buttons.lua", "/synui/lib/buttons.lua")
+
+            print("Updated successfully.")
         else
             print("SynUI is up-to-date.")
         end
@@ -53,6 +56,7 @@ else
     download("init.lua", "/synui/init.lua")
     download("lib/app.lua", "/synui/lib/app.lua")
     download("lib/drawing.lua", "/synui/lib/drawing.lua")
-
+    download("lib/buttons.lua", "/synui/lib/buttons.lua")
+    
     print("SynUI has been installed.")
 end
